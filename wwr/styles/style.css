@@ -150,7 +150,7 @@ footer .social img{
 .camping-card{
     margin: 200px 0;
     grid-column: 5/7;
-    grid-row: 2/3:
+    grid-row: 2/3;
 }
 .rafting-card{
     margin: 200px 0;
