@@ -203,7 +203,7 @@ nav {
 }
 .home-grid {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: 1fr 2fr 3fr 4fr 5fr 6fr 7fr 8fr 9fr 10fr;
 }
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
