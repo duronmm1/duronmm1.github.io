@@ -203,7 +203,7 @@ nav {
 }
 .home-grid {
     display: grid;
-  }
+}
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
