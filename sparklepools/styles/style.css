@@ -79,7 +79,7 @@ nav a:hover {
     grid-template-columns: repeat(10,1fr);
 }
 .patio-text {
-    background-color: #6CDAD8;
+    background-color: #E5F98B;
     line-height: 1.5em;
     padding: 35px;
     grid-column: 6/10;
@@ -98,11 +98,7 @@ footer{
 h4{
     color:black
 }
-.patio-img {
-
-    box-shadow: 5px 5px 10px #6f7364;
-}
-.patio-text p{
+.patio-text {
     color:black;
     font-size: 1.5em;
     padding-bottom: 15px;
@@ -183,6 +179,51 @@ nav {
     padding-left: 50px;
     padding-right: 50px;
 }
+.container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .patio-img {
+    display: block;
+    width: 70%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 10px #6f7364;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #6CDAD8;
+    overflow: hidden;
+    width: 70%;
+    height: 0;
+    transition: .5s ease;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .patio-text {
+    white-space: wrap; 
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
