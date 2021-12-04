@@ -28,6 +28,10 @@ nav a {
     width: 100%;
     height: 500px;
 }
+#sparkle-sub-img {
+    width: 100%;
+    height: 110px;
+}
 header {
     display: grid;
     grid-template-columns: 150px auto;
@@ -224,6 +228,67 @@ nav {
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
+
+
+  .about-us-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr 3fr 1fr 1fr;
+    justify-items: center;
+    grid-row-gap: 2em;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.about-us-title {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 40px;
+    letter-spacing:3px;
+    color: #6CDAD8;
+    margin: 100px 0;
+    border-top: 5px solid #E5F98B;
+    border-bottom: 5px solid #E5F98B;
+    grid-column: 2/8;
+    grid-row: 1/2;
+    justify-self: stretch;
+    text-align: center;
+}
+.about-us-img1 {
+    grid-column: 2/5;
+    grid-row: 2/5;
+    border: 15px solid #E5F98B;
+    width: 100%;
+    box-shadow: 5px 5px 10px #1b1b1b;
+}
+.horizon-text {
+    grid-column: 4/7;
+    grid-row: 3/4;
+}
+.about-us-img2 {
+    grid-column: 5/8;
+    grid-row: 6/9;
+    border: 15px solid #E5F98B;
+    width: 100%;
+    box-shadow: 5px 5px 10px #1b1b1b;
+    height: 500px;
+}
+.stairs-text {
+    grid-column: 3/6;
+    grid-row: 7/8;
+}
+.horizon-text, .stairs-text {
+    background-color: #6CDAD8;
+    overflow: auto;
+    height: auto;
+    height: 250px;
+    padding:35px;
+    line-height: 1.5em;
+    box-shadow: 5px 5px 10px #1b1b1b;
+}
+.horizon-text h2, .stairs-text h2 {
+    font-family: 'Cuprum', sans-serif;
+}
+.horizon-text p, .stairs-text p {
+    font-family: "Alegreya", sans-serif;
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
